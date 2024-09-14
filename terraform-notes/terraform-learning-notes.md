@@ -1,3 +1,5 @@
+Learning roadmap \- [https://roadmap.sh/terraform](https://roadmap.sh/terraform)
+
 # What is Infrastructure as Code?
 
 Infrastructure as Code (IaC) is a practice where we use machine-readable source code for provisioning and managing cloud infrastructure. 
@@ -368,6 +370,32 @@ Below are few best practices for state files which can help in better management
 `terraform state force-unlock` command is used to manually release a lock on the statefile.
 
 # Terraform Modules
+
+Modules in terraform can be understood as base templates which contains resources and configurations which can be reused across multiple projects or within the same project. 
+
+Modules promote code reusability, maintainability, and consistency in infrastructure deployments. They can accept input variables, produce output values, and be nested within other modules. Modules can be sourced from local directories, version control systems, or public registries.
+
+## Root Module
+
+The root module can be understood as the default module which is in the main working directory of the terraform template. 
+
+## Child Module
+
+A module which is called by other modules is referred to as a child module. 
+
+## Using Published Modules
+
+Published modules can be used by providing the source of the module which can be stored in a version control system or terraform registry.
+
+## Creating a Terraform Module
+
+We can create a terraform module by specifying the configurations with the resources, variables, and outputs in a separate folder. This module can then be used in different projects using the `module` block and providing the module path or url via the `source` argument.
+
+# Terraform Provisioners
+
+Provisioners can run scripts, upload files, or execute other tools on resources after they’re created. Common types include local-exec (runs commands on the machine running Terraform) and remote-exec (runs commands on a remote resource).
+
+They’re often seen as a last resort when native Terraform resources or provider capabilities are insufficient. Best practices suggest using dedicated configuration management tools like Ansible or Chef instead of heavy reliance on provisioners. When used, provisioners should be designed to be idempotent and handle potential failures gracefully.
 
 ## 
 
