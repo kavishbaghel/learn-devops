@@ -100,6 +100,8 @@ Providers in Terraform can be understood as plugins that use APIs of various clo
 
 Various clouds have their provider for Terraform such as AWS, GCP, Azure, etc. These providers require their own configuration including authentication and endpoint details. The **provider** block is used to specify a provider and we can also use multiple providers in a single terraform project depending on the resources we want to provision. The basic understanding of terraform provider can be understood with the following image \-
 
+![Terraform Providers](./img/terraform-providers.png)
+
 ## Terraform Registry
 
 Terraform Registry is a centralized repository form to fetch Terraform modules and providers. The registry supports versioning, ensuring consistent deployments, and includes detailed documentation for each module and provider. Users can also publish their modules to the registry, facilitating community collaboration and reuse.
@@ -110,7 +112,7 @@ A provider is configured by specifying the required providers in the **provider*
 
 This provider needs to be added to the **required\_providers** block to fetch it for the terraform registry. A provider can be configured as in the screenshot shared below \-
 
-![][image2]
+![Terraform Providers Block](./img/tf-providers-code.png)
 
 Here, in the required providers block we have declared the aws provider, the terraform registry as its source, and the version of the provider. The aws provider will be downloaded from the registry where its version needs to be either 3.27 or greater than 3.27 as specified in the configuration.
 
