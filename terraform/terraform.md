@@ -1,5 +1,3 @@
-Learning roadmap \- [https://roadmap.sh/terraform](https://roadmap.sh/terraform)
-
 # What is Infrastructure as Code?
 
 Infrastructure as Code (IaC) is a practice where we use machine-readable source code for provisioning and managing cloud infrastructure. 
@@ -44,9 +42,11 @@ Terraform is available for various operating systems like Linux, MacOS, and Wind
 Once you have installed terraform on your operating system you can verify it using the following command \-
 
 **`terraform -version`**  
+
+
 If terraform is installed correctly it will show you the version of terraform installed in the output. The output would look something like this screenshot \-
 
-![][image1]
+![Terraform Installation](./img/install-terraform.png)
 
 Once your terraform installation is verified you are good to proceed to get your hands dirty with terraform.
 
