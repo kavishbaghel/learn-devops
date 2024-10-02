@@ -120,13 +120,13 @@ In the provider block, we have mentioned the provider name and then the details 
 
 We can also configure a provider multiple times using an alias for it to be used with different resources \-
 
-![][image3]
+![Terraform Provider Alias](./img/tf-provider-alias.png)
 
 # Terraform Resources
 
 We define **resources** in terraform configuration for provisioning various infrastructure components such as virtual machines, storage, databases, networking, queues, etc. These resources are defined using the **resource** block in terraform which contains other details required for the resource creation as configuration. Below is an example of a basic resource block syntax \-
 
-![][image4]  
+![Terraform Resource](./img/terraform-resource.png)  
 In the resource block, we specify the resource type and the local name of the resource which is used to refer to the resource across the module but it has no meaning outside the module’s scope. 
 
 In the previous screenshot, we are creating a resource of type **“aws\_instance”** with the local name **“app\_server”**. This resource can be referred to across the terraform module with the same local name. Inside the resource body, we have provided the configuration parameters based on which the resource will be created. Some of these parameters are required and some of these are optional depending on the resource type. 
@@ -170,10 +170,10 @@ Variables in terraform provide flexibility and make it more configurable. We can
 
 An input variable can be declared using the following syntax \- 
 
-![][image5]  
+![Terraform Variables Declaration](./img/terraform-variables-declaration.png)  
 As in the screenshot above, the variable “ami\_id” is of type string and has a default value which is “ami-abc1234”. It also has description to explain what is the variable being used for. You can access this variable into your terraform resources by var.\<variable\_name\> as shown in the example below \-
 
-![][image6]
+![Terraform Variable Usage](./img/terraform-var-usage.png)
 
 ### Type Constraints
 
@@ -197,11 +197,7 @@ Following are the different data types for input variable in terraform \-
 
 ### Variables.tf File
 
-While you can define variable anywhere in your terraform code, its a good practice to centralize the variables in a single file named as variables.tf in your terraform codebase. 
-
-![][image7]
-
-This helps you creating a single reference point for all your variables making it easier to read and maintain. You can declare all your variables in this centralized file with their type constraints, default values, description, etc.
+While you can define variable anywhere in your terraform code, its a good practice to centralize the variables in a single file named as variables.tf in your terraform codebase. This helps you creating a single reference point for all your variables making it easier to read and maintain. You can declare all your variables in this centralized file with their type constraints, default values, description, etc.
 
 ### Variable Arguments
 
@@ -220,11 +216,11 @@ Local Values is a name given to an expression to use it multiple time directly b
 
 Local values are also known as Locals and can be defined using the **locals** block. An example of declaring locals is below \-
 
-![][image8]
+![Terraform Local Values](./img/terraform-locals.png)
 
 You can access local values using the **local** argument as follows \-
 
-![][image9]
+![Locals usage](./img/terraform-locals-usage.png)
 
 ## Environment Variables
 
@@ -238,11 +234,11 @@ Data Sources allow terraform to access data outside of the module scope such as 
 
 You can define a data source as follows \-
 
-![][image10]
+![Terraform Data Sources](./img/terraform-data-sources.png)
 
 Here we are creating a data of type aws\_ami and giving its the name app\_server. The id argument gets the value from the ami\_id variable. We can use this data in a resource as follows \-
 
-![][image11] 
+![Terraform Data Usage](./img/terraform-resource.png) 
 
 # Outputs in Terraform
 
@@ -252,7 +248,7 @@ A good practice is to declare all the output values in a centralized file named 
 
 You can declare an output as follows \-
 
-![][image12]
+![Terraform Outputs](./img/terraform-output.png)
 
 There might be outputs which can contain sensitive information which you might not want to be displayed openly. You can use the **`sensitive`** argument to mark an output as sensitive. You will still be able to access the output value programmatically.
 
