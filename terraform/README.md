@@ -1,6 +1,6 @@
 # Terraform Notes 
 
-The purpose of these notes is to provide a reference for beginners who can go through each topic and understand the basics. Contents of the notes are as follows -
+The purpose of these notes is to provide a reference for beginners who can go through each topic and understand the basics. Topics covered in the notes are as follows -
 
 1. [What is IaC?](./README.md/#what-is-infrastructure-as-code)
 2. [Infrastructure as Code(IaC) vs Configuration as Code(CaC)](./README.md/#cac-vs-iac)
@@ -13,6 +13,11 @@ The purpose of these notes is to provide a reference for beginners who can go th
 9. [Terraform Registry](./README.md/#terraform-registry)
 10. [Configuring Providers](./README.md/#configuring-providers)
 11. [Terraform Resources](./README.md/#terraform-resources)
+12. [Meta Arguments](./README.md/#meta-arguments)
+13. [Terraform Variables](./README.md/#variables-in-terraform)
+14. [Local Values](./README.md/#local-values)
+15. [Data Sources in Terraform](./README.md/#data-sources-in-terraform)
+16. [Outputs in Terraform](./README.md/#outputs-in-terraform)
 
 # What is Infrastructure as Code?
 
