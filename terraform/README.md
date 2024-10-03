@@ -10,6 +10,10 @@ The purpose of these notes is to provide a reference for beginners who can go th
 4. [Installing Terraform](./terraform.md/#installing-terraform)
 5. [Hashicrop Configuration Language](./terraform.md/#hashicorp-configuration-language)
 6. [Terraform Project Setup and Initialization](./terraform.md/#project-setup-and-initialization)
+7. [Terraform Format and Validating](./terraform.md/#terraform-format-and-validating)
+8. [Terraform Providers](./terraform.md/#terraform-providers)
+9. [Terraform Registry](./terraform.md/#terraform-registry)
+10. [Configuring Providers](./terraform.md/#configuring-providers)
 
 
 
