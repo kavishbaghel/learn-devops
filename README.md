@@ -28,7 +28,7 @@ Please find below the links to various topics to learn for starting a career in 
 
 &rarr; [Monitoring and Observability](./monitoring-and-observability/)
 
-For contributing please see - [Contrubuting Guide](./CONTRIBUTING.md)
+For contributing please see - [Contribution Guide](./CONTRIBUTING.md)
 
 Thank You :) 
 
