@@ -1,3 +1,3 @@
 # Kubernetes Notes
 
-The content for this topic is in progress. Please stay tuned for further updates.
+1. [Introduction to Kubernetes](./k8s.md/#introduction-to-Kubernetes)
