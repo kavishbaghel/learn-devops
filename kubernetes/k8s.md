@@ -41,4 +41,11 @@ Kubernetes helps in orchestration of containerized applications helping in bette
 ## Key Concepts & Terminologies of Kubernetes
 
 
+- **Cluster**: A cluster can be understood as a group on nodes on which the whole kubernetes workload runs.
+
+- **Nodes**: Node is the actual machine on which a Kubernetes workload runs. Node can be a physical or virtual machine which has the underlying hardware resources like memory and cpu to be used for running applications alongside a Kubernetes workload. There are basically two kinds of nodes in K8s cluster - `Master Node` and `Worker Node`.
+
+- **Master Node**: The master node also known as the `primary node` contains the key components that manages the cluster. No appication workloads run on this node. The key components that run on the master node are - API Server (kube-apiserver), Scheduler (kube-scheduler), Controller Manager (kube-controller-manager), Key-Value Store (etcd).
+
+- **Worker Nodes** - The worker nodes also known as `secondary nodes` or simply `nodes` are used to run the actual application workloads in K8s. The worker node resources are managed by the master node.
 
