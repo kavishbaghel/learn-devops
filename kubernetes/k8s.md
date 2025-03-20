@@ -1,4 +1,6 @@
-# Introduction to Kubernetes(k8s)
+# Kubernetes for Beginners
+
+## Introduction to Kubernetes(k8s)
 
 Kubernetes (k8s) is an open-source container orchestration platform that helps in automating the deployments, scaling, and management of containerized applications. The rich feature set of Kubernetes enables it to abstract the underlying infrastructure and manage complex applications at scale. 
 
