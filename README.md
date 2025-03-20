@@ -1,4 +1,4 @@
-# Devops11
+# Learn DevOps
 
 A repository that contains necessary topics along with content to start learning DevOps for beginners. The focus here is to keep the information crisp, easy to understand for everyone and cover the topics which would be helpful in giving beginners a kickstart in the areas they are interested to learn. Please feel free to share your feedback and contribute to make the content better.
 
